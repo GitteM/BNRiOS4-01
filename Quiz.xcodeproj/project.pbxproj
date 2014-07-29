@@ -19,6 +19,8 @@
 		ECDB0E02198805FD00B7C786 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDB0DEA198805FC00B7C786 /* UIKit.framework */; };
 		ECDB0E0A198805FD00B7C786 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECDB0E08198805FD00B7C786 /* InfoPlist.strings */; };
 		ECDB0E0C198805FD00B7C786 /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB0E0B198805FD00B7C786 /* QuizTests.m */; };
+		ECDB0E1819880BC100B7C786 /* BNRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB0E1619880BC100B7C786 /* BNRViewController.m */; };
+		ECDB0E1919880BC100B7C786 /* BNRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECDB0E1719880BC100B7C786 /* BNRViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		ECDB0E07198805FD00B7C786 /* QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizTests-Info.plist"; sourceTree = "<group>"; };
 		ECDB0E09198805FD00B7C786 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ECDB0E0B198805FD00B7C786 /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		ECDB0E1519880BC100B7C786 /* BNRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRViewController.h; sourceTree = "<group>"; };
+		ECDB0E1619880BC100B7C786 /* BNRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRViewController.m; sourceTree = "<group>"; };
+		ECDB0E1719880BC100B7C786 /* BNRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 			children = (
 				ECDB0DF5198805FC00B7C786 /* BNRAppDelegate.h */,
 				ECDB0DF6198805FC00B7C786 /* BNRAppDelegate.m */,
+				ECDB0E1A19880C0700B7C786 /* ViewController */,
 				ECDB0DF8198805FC00B7C786 /* Images.xcassets */,
 				ECDB0DED198805FC00B7C786 /* Supporting Files */,
 			);
@@ -142,6 +148,16 @@
 				ECDB0E08198805FD00B7C786 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECDB0E1A19880C0700B7C786 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB0E1519880BC100B7C786 /* BNRViewController.h */,
+				ECDB0E1619880BC100B7C786 /* BNRViewController.m */,
+				ECDB0E1719880BC100B7C786 /* BNRViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +208,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Big Nerd Ranch";
 				TargetAttributes = {
+					ECDB0DE2198805FC00B7C786 = {
+						DevelopmentTeam = TAKD93V9H5;
+					};
 					ECDB0DFD198805FD00B7C786 = {
 						TestTargetID = ECDB0DE2198805FC00B7C786;
 					};
@@ -220,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDB0E1919880BC100B7C786 /* BNRViewController.xib in Resources */,
 				ECDB0DF1198805FC00B7C786 /* InfoPlist.strings in Resources */,
 				ECDB0DF9198805FC00B7C786 /* Images.xcassets in Resources */,
 			);
@@ -242,6 +262,7 @@
 			files = (
 				ECDB0DF3198805FC00B7C786 /* main.m in Sources */,
 				ECDB0DF7198805FC00B7C786 /* BNRAppDelegate.m in Sources */,
+				ECDB0E1819880BC100B7C786 /* BNRViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quiz/Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Quiz/Quiz-Info.plist";
@@ -371,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quiz/Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Quiz/Quiz-Info.plist";
